@@ -125,11 +125,11 @@
 
     async function loop(){
         calledAmount += 1
-        if(whileCalledAmount >= 100){
+        if(whileCalledAmount >= 5){
             await sleep(0)
             whileCalledAmount = 0
         }
-        while(Hacks.AutoE.enabled && whileCalledAmount <= 100){
+        while(Hacks.AutoE.enabled && whileCalledAmount <= 5){
             whileCalledAmount += 1
             keyDown(69)
             keyUp(69)
