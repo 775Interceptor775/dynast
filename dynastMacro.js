@@ -33,7 +33,7 @@
     window.addEventListener("keypress", function(e) {
         if(e.code == Hacks.AutoE.code){
             Hacks.AutoE.enabled = !Hacks.AutoE.enabled
-            console.log(Hacks.AutoE.enabled)
+            loop()
         }
     });
 
@@ -129,16 +129,15 @@
             keyDown(69)
             keyUp(69)
         }
-        if(calledAmount <= 100){
+        if(calledAmount <= 100 && Hacks.AutoE.enabled){
             loop();
         }
-        if(calledAmount >= 100){
+        if(calledAmount >= 100 && Hacks.AutoE.enabled){
             calledAmount = 0;
             await sleep(0)
             loop();
         }
     }
-    loop()
     window.onload = function() {
         Utilities.LoadHack()
     }
