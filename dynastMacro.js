@@ -3,9 +3,6 @@
         AutoE: {enabled: false, keyCode : 81, code: "KeyQ"}
     }
 
-    const gameCanvas = document.getElementById("unity-canvas")
-    var gl = gameCanvas.getContext("webgl2")
-
     var calledAmount = 0;
     var whileCalledAmount = 0;
 
