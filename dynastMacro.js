@@ -83,11 +83,9 @@
                     click++;
                     if (click >= 1) {
                         if (event.code == "Escape") {
-                            Hacks[callback].enabled = true;
                             Hacks[callback].keyCode = "NONE";
                             Hacks[callback].code = "NONE";
                         } else {
-                            Hacks[callback].enabled = true
                             Hacks[callback].keyCode = event.keyCode;
                             Hacks[callback].code = event.code;
                         };
