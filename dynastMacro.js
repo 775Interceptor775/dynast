@@ -86,7 +86,7 @@
                     click++;
                     if (click >= 1) {
                         if (event.code == "Escape") {
-                            Hacks[callback].enabled = true //when added event listener it does enable = !enable so this makes it false
+                            Hacks[callback].enabled = true;
                             Hacks[callback].keyCode = "NONE";
                             Hacks[callback].code = "NONE";
                         } else {
