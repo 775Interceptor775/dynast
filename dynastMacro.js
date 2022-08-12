@@ -1,9 +1,9 @@
 (function() {
-    var Hacks = {
+    const Hacks = {
         AutoE: {enabled: false, keyCode : 81, code: "KeyQ"}
     }
 
-    var gameCanvas = document.getElementById("unity-canvas")
+    const gameCanvas = document.getElementById("unity-canvas")
     var gl = gameCanvas.getContext("webgl2")
 
     var calledAmount = 0;
